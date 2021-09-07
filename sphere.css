@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    overflow-x: hidden;
+}
+.title{
+    width: 30ch;
+    position: absolute;
+    top: calc((100vh - 2.5rem) / 2);
+    left: calc((100vw - 30ch) / 2);
+    color: white;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin: auto;
+    line-height: 2.5rem;
+    background: url('45357003-water-color-splash-background.jpg');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+a.next{
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+    width: 15vmin;
+    padding: 2vmin 0;
+    color: white;
+    border: 1px solid #5abb76;
+    text-align: center;
+}
+canvas{
+    width: 100%;
+    height: 100vh;
+    background: rgb(0,0,0);
+}
+
+@media only screen and (max-width: 1000px) {
+    .title{
+        font-size: 2rem;
+        width: 20ch;
+        top: calc((100vh - 2rem) / 2);
+        left: calc((100vw - 20ch) / 2);
+    }
+}
